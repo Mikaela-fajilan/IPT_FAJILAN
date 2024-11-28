@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Data Form</title>
+    <link rel="stylesheet" href="css.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>BIO-DATA</h1>
+
+        <!-- Personal Data Section -->
+        <h2>Personal Data</h2>
+        <div class="form-box">
+            <div class="personal-grid">
+                <div class="left">
+                    <label>Position Desired:</label><span>___________________________</span>
+                    <label>Name:</label><span>___________________________</span>
+                    <label>City Address:</label><span>___________________________</span>
+                    <label>Provincial Address:</label><span>___________________________</span>
+                    <label>Telephone:</label><span>___________________________</span>
+                    <label>E-mail Address:</label><span>___________________________</span>
+                    <label>Date of Birth:</label><span>___________________________</span>
+                    <label>Civil Status:</label><span>___________________________</span>
+                    <label>Height:</label><span>___________________________</span>
+                    <label>Religion:</label><span>___________________________</span>
+                    <label>Spouse:</label><span>___________________________</span>
+                    <label>Name of Children:</label><span>___________________________</span>
+                    <label>Fathers Name:</label><span>___________________________</span>
+                    <label>Mothers Name:</label><span>___________________________</span>
+                </div>
+                <div class="right">
+                    <label>Date:</label><span>___________________________</span>
+                    <label>Gender:</label><span>___________________________</span>
+                    <label>Cellphone:</label><span>___________________________</span>
+                    <label>Birth of Place:</label><span>___________________________</span>
+                    <label>Citizenship:</label><span>___________________________</span>
+                    <label>Weight:</label><span>___________________________</span>
+                    <label>Occupation:</label><span>___________________________</span>
+                    <label>Date of Birth (Spouse):</label><span>___________________________</span>
+                    <label>Language spoken and written:</label><span>___________________________</span>
+                    <label>Person to be contacted in case of emergency:</label><span>___________________________</span>
+                    <label>Address and telephone:</label><span>___________________________</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Educational Background Section -->
+        <h2>Educational Background</h2>
+        <div class="form-box">
+            <div class="form-group">
+                <label>Elementary:</label><span>___________________________</span>
+                <label>Year Graduated:</label><span>___________________________</span>
+            </div>
+            <div class="form-group">
+                <label>High School:</label><span>___________________________</span>
+                <label>Year Graduated:</label><span>___________________________</span>
+            </div>
+            <div class="form-group">
+                <label>College:</label><span>___________________________</span>
+                <label>Year Graduated:</label><span>___________________________</span>
+            </div>
+            <div class="form-group">
+                <label>Degree Received:</label><span>___________________________</span>
+                <label>Special Skills:</label><span>___________________________</span>
+            </div>
+        </div>
+
+        <!-- Employment Record Section -->
+        <h2>Employment Record</h2>
+        <div class="form-box">
+            <div class="form-group">
+                <label>Company Name:</label><span>___________________________</span>
+                <label>Position:</label><span>___________________________</span>
+            </div>
+            <div class="form-group">
+                <label>From:</label><span>___________________________</span>
+                <label>To:</label><span>___________________________</span>
+            </div>
+        </div>
+
+        <!-- Character Reference Section -->
+        <h2>Character Reference</h2>
+        <div class="form-box">
+            <div class="form-group">
+                <label>Name:</label><span>___________________________</span>
+                <label>Company:</label><span>___________________________</span>
+            </div>
+            <div class="form-group">
+                <label>Position:</label><span>___________________________</span>
+                <label>Contact No.:</label><span>___________________________</span>
+            </div>
+        </div>
+
+        <!-- Signature Section -->
+        <div class="form-box signature">
+            <div class="certification-container">
+                <div>
+                    <p>Res. Cert. No. ___________________________</p>
+                    <p>Issued at: ___________________________</p>
+                    <p>Issued on: ___________________________</p>
+                    <p>SSS: ___________________________</p>
+                    <p>TIN: ___________________________</p>
+                    <p>NBI No.: ___________________________</p>
+                    <p>Passport No.: ___________________________</p>
+                    <div class="ao">
+                        <p>___________________________</p>
+                        <p><center>Applicant's Signature</center></p>
+                    </div>
+                </div>
+                <p class="oa">I here certify that the above information is true and correct to the best of my knowledge and belief. I also understand that any misinterpretation will be considered reason for withdrawal of an offer or subsequent dismissal if employed.</p>
+            </div>
+        </div>
+    </div>
+    <div class="photo-box"></div>
+</body>
+</html>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+/* Styling for h2 headings */
+h2 {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Important to position the photo absolutely inside this container */
+}
+
+/* Box around only the form sections */
+.form-box {
+    border: 2px solid #000;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.personal-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.personal-grid .left, 
+.personal-grid .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-grid label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.personal-grid span {
+    margin-left: 10px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.form-group span {
+    flex: 2;
+}
+
+.signature {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.signature p {
+    margin-bottom: 10px;
+}
+
+/* Photo Box Absolute Positioning */
+.photo-box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 40px; 
+    right: 320px; 
+}
+
+.certification-container {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between the items */
+    align-items: flex-start; /* Align items at the top */
+    margin-top: 20px; /* Space above the certification section */
+}
+
+.oa {
+    max-width: 45%; /* Limit the width of the certification text */
+    margin-left: 20px; /* Space between the text and signature box */
+    text-align: justify; /* Justify the text for better appearance */
+}
+
+.ao {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+</style>
